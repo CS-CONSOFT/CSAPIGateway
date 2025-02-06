@@ -1,0 +1,6 @@
+@CSGateway_HostAddress = http://localhost:5169
+
+GET {{CSGateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
