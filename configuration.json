@@ -3,39 +3,6 @@
     {
       "UpstreamPathTemplate": "/api/{everything}",
       "DownstreamPathTemplate": "/api/{everything}",
-      "DownstreamScheme": "https", 
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "api3.heei.com.br", 
-          "Port": 80 
-        }
-      ],
-      "UpstreamHeaders": {
-        "x-project": "csbs101" 
-      }
-    },
-    {
-      "UpstreamPathTemplate": "/api/{everything}",
-      "DownstreamPathTemplate": "/api/{everything}",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
-        {
-          "Host": "api1.heei.com.br",
-          "Port": 80
-        }
-      ],
-      "UpstreamHeaders": {
-        "x-project": "csst102"
-      }
-    }
-  ]
-}
-
-{
-  "Routes": [
-    {
-      "UpstreamPathTemplate": "/api/{everything}",
-      "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
