@@ -18,7 +18,6 @@ builder.Configuration.AddJsonFile("configuration.json", optional: false, reloadO
 builder.Services.AddOcelot();
 
 
-
 var app = builder.Build();
 
 // Configure Swagger first
