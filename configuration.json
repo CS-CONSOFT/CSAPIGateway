@@ -14,7 +14,7 @@
     {
       "UpstreamPathTemplate": "/csst/{everything}",
       "DownstreamPathTemplate": "/csst/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "${API_HOST_ST}", // Variável de ambiente para o host
