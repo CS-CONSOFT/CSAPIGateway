@@ -3,15 +3,15 @@
     {
       "UpstreamPathTemplate": "/api/{everything}",
       "DownstreamPathTemplate": "/api/{everything}",
-      "DownstreamScheme": "https", 
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "api3.heei.com.br", 
-          "Port": 5009 
+          "Host": "${API_HOST_BS}", // Variável de ambiente para o host
+          "Port": "${API_PORT_BS}" // Variável de ambiente para a porta
         }
       ],
       "UpstreamHeaders": {
-        "x-project": "csbs101" 
+        "x-project": "csbs101"
       }
     },
     {
@@ -20,8 +20,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "api1.heei.com.br",
-          "Port": 5007
+          "Host": "${API_HOST_ST}", // Variável de ambiente para o host
+          "Port": "${API_PORT_ST}" // Variável de ambiente para a porta
         }
       ],
       "UpstreamHeaders": {
