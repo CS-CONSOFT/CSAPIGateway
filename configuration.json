@@ -6,8 +6,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "${API_HOST_BS}", // Variável de ambiente para o host
-          "Port": "${API_PORT_BS}" // Variável de ambiente para a porta
+          "Host": "api3.heei.com.br",
+          "Port": 5009 // Variável de ambiente para a porta
         }
       ]
     },
@@ -17,8 +17,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "${API_HOST_ST}", // Variável de ambiente para o host
-          "Port": "${API_PORT_ST}" // Variável de ambiente para a porta
+          "Host": "api1.heei.com.br",
+          "Port": 5007 // Variável de ambiente para a porta
         }
       ]
     }
