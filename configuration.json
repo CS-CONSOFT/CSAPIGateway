@@ -3,22 +3,22 @@
     {
       "UpstreamPathTemplate": "/api/{everything}",
       "DownstreamPathTemplate": "/api/{everything}",
-      "DownstreamScheme": "http", // Verifique se o protocolo é HTTPS ou HTTP
+      "DownstreamScheme": "https", 
       "DownstreamHostAndPorts": [
         {
-          "Host": "api3.heei.com.br", // Certifique-se de que este host está correto
-          "Port": 80 // Corrija para a porta 5009
+          "Host": "api3.heei.com.br",
+          "Port": 80 
         }
       ]
     },
     {
       "UpstreamPathTemplate": "/csst/{everything}",
       "DownstreamPathTemplate": "/csst/{everything}",
-      "DownstreamScheme": "http", // Novamente, verifique o protocolo
+      "DownstreamScheme": "https", 
       "DownstreamHostAndPorts": [
         {
-          "Host": "api1.heei.com.br", // Certifique-se de que este host está correto
-          "Port": 80 // Corrija para a porta 5009
+          "Host": "api1.heei.com.br", 
+          "Port": 80 
         }
       ]
     }

@@ -26,18 +26,18 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
-# Definir argumentos que podem ser passados para o contêiner
-ARG API_HOST_BS
-ARG API_PORT_BS
-
-ARG API_HOST_ST
-ARG API_PORT_ST
-
-# Configurar variáveis de ambiente dentro do contêiner
-ENV API_HOST_BS=${API_HOST_BS} \
-    API_PORT_BS=${API_PORT_BS} \
-    API_HOST_ST=${API_HOST_ST} \
-    API_PORT_ST=${API_PORT_ST}
+## Definir argumentos que podem ser passados para o contêiner
+#ARG API_HOST_BS
+#ARG API_PORT_BS
+#
+#ARG API_HOST_ST
+#ARG API_PORT_ST
+#
+## Configurar variáveis de ambiente dentro do contêiner
+#ENV API_HOST_BS=${API_HOST_BS} \
+    #API_PORT_BS=${API_PORT_BS} \
+    #API_HOST_ST=${API_HOST_ST} \
+    #API_PORT_ST=${API_PORT_ST}
 
 # Configurar a entrada do serviço
 ENTRYPOINT ["dotnet", "CSGateway.dll"]

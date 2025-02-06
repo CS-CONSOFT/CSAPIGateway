@@ -15,8 +15,15 @@ builder.Services.AddSwaggerGen();
 
 builder.Configuration.AddJsonFile("configuration.json", optional: false, reloadOnChange: true);
 
+builder.Services.AddHttpClient("OcelotHttpClient")
+    .ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
+    {
+        ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+    });
+
 builder.Services.AddOcelot();
 
+builder.WebHost.UseUrls(["http://0.0.0.0:80"]);
 
 var app = builder.Build();
 
@@ -24,13 +31,13 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
-// Then configure Ocelot
-await app.UseOcelot();
+
 
 // Configure other middlewares
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
-
+// Then configure Ocelot
+await app.UseOcelot();
 app.Run();
 
