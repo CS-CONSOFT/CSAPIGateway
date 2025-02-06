@@ -9,24 +9,18 @@
           "Host": "${API_HOST_BS}", // Variável de ambiente para o host
           "Port": "${API_PORT_BS}" // Variável de ambiente para a porta
         }
-      ],
-      "UpstreamHeaders": {
-        "x-project": "csbs101"
-      }
+      ]
     },
     {
-      "UpstreamPathTemplate": "/api/{everything}",
-      "DownstreamPathTemplate": "/api/{everything}",
+      "UpstreamPathTemplate": "/csst/{everything}",
+      "DownstreamPathTemplate": "/csst/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "${API_HOST_ST}", // Variável de ambiente para o host
           "Port": "${API_PORT_ST}" // Variável de ambiente para a porta
         }
-      ],
-      "UpstreamHeaders": {
-        "x-project": "csst102"
-      }
+      ]
     }
   ]
 }
