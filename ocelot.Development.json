@@ -1,27 +1,30 @@
 {
-  //dsv17api.com.br/csbs101
   "Routes": [
     {
-      "UpstreamPathTemplate": "/csbs101/{everything}",
-      "DownstreamPathTemplate": "/csbs101/{everything}",
-      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/bs101/{everything}",
+      "DownstreamPathTemplate": "/bs101/{everything}",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "docker.csicorpnet.com.br",
-          "Port": 5009 //a porta interna que ta rodando o container
+          "Port": 5150
         }
-      ]
+      ],
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ], // Adicione os métodos HTTP que você usa
+      "SwaggerKey": "basico"
     },
     {
-      "UpstreamPathTemplate": "/csst/{everything}",
-      "DownstreamPathTemplate": "/csst/{everything}",
-      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/st102/{everything}",
+      "DownstreamPathTemplate": "/st102/{everything}",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "docker.csicorpnet.com.br",
-          "Port": 5007
+          "Port": 5152
         }
-      ]
+      ],
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ], // Adicione os métodos HTTP que você usa
+      "SwaggerKey": "estatica"
     },
     {
       "UpstreamPathTemplate": "/sy103/{everything}",
@@ -30,33 +33,45 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "docker.csicorpnet.com.br",
-          "Port": 5007
+          "Port": 5151
+        }
+      ],
+      "SwaggerKey": "system"
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "basico",
+      "Config": [
+        {
+          "Name": "CSBS101 API",
+          "Version": "v1",
+          "Url": "https://api3.heei.com.br/swagger/v1/swagger.json"
         }
       ]
     },
-
-    //swagger
     {
-      "UpstreamPathTemplate": "/apiswagger",
-      "DownstreamPathTemplate": "/swagger",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
+      "Key": "system",
+      "Config": [
         {
-          "Host": "docker.csicorpnet.com.br",
-          "Port": 5009
+          "Name": "CSSY103 API",
+          "Version": "v1",
+          "Url": "https://api2.heei.com.br/swagger/v1/swagger.json"
         }
       ]
     },
     {
-      "UpstreamPathTemplate": "/csstswagger",
-      "DownstreamPathTemplate": "/swagger",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
+      "Key": "estatica",
+      "Config": [
         {
-          "Host": "docker.csicorpnet.com.br",
-          "Port": 5007
+          "Name": "CSST102 API",
+          "Version": "v1",
+          "Url": "https://api1.heei.com.br/swagger/v1/swagger.json"
         }
       ]
     }
-  ]
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://dsv17bs101.heei.com.br"
+  }
 }
