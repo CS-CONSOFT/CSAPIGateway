@@ -3,7 +3,7 @@
     {
       "UpstreamPathTemplate": "/api/{everything}",
       "DownstreamPathTemplate": "/api/{everything}",
-      "DownstreamScheme": "https", 
+      "DownstreamScheme": "http", 
       "DownstreamHostAndPorts": [
         {
           "Host": "api3.heei.com.br",
@@ -14,7 +14,7 @@
     {
       "UpstreamPathTemplate": "/csst/{everything}",
       "DownstreamPathTemplate": "/csst/{everything}",
-      "DownstreamScheme": "https", 
+      "DownstreamScheme": "http", 
       "DownstreamHostAndPorts": [
         {
           "Host": "api1.heei.com.br", 
