@@ -1,5 +1,4 @@
 {
-
   //dsv17api.com.br/csbs101
   "Routes": [
     {
@@ -34,7 +33,7 @@
           "Port": 5007
         }
       ]
-    }
+    },
 
     //swagger
     {
