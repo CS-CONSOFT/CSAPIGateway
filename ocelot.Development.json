@@ -9,7 +9,8 @@
           "Host": "api3.heei.com.br",
           "Port": 80 //a porta interna que ta rodando o container
         }
-      ]
+      ],
+      "SwaggerKey": "basico"
     },
     {
       "UpstreamPathTemplate": "/csst/{everything}",
@@ -20,31 +21,32 @@
           "Host": "api1.heei.com.br",
           "Port": 80
         }
-      ]
-    },
-
-    //swagger
+      ],
+      "SwaggerKey": "estatica"
+    }
+  ],
+  "SwaggerEndPoints": [
     {
-      "UpstreamPathTemplate": "/apiswagger",
-      "DownstreamPathTemplate": "/swagger",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
+      "Key": "basico",
+      "Config": [
         {
-          "Host": "api3.heei.com.br",
-          "Port": 80
+          "Name": "API Básico",
+          "Version": "v1",
+          "Url": "https://api3.heei.com.br/swagger/v1/swagger.json"
         }
       ]
     },
     {
-      "UpstreamPathTemplate": "/csstswagger",
-      "DownstreamPathTemplate": "/swagger",
-      "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [
+      "Key": "estatica",
+      "Config": [
         {
-          "Host": "api1.heei.com.br",
-          "Port": 80
+          "Name": "API Estática",
+          "Version": "v1",
+          "Url": "https://api1.heei.com.br/swagger/v1/swagger.json"
         }
       ]
     }
   ]
+
+
 }
