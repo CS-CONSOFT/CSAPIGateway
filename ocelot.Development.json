@@ -22,15 +22,24 @@
         }
       ]
     },
+
+    //swagger
     {
-      "UpstreamPathTemplate": "/swagger/{everything}",
+      "UpstreamPathTemplate": "/swagger/api/{everything}",
       "DownstreamPathTemplate": "/swagger/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "api3.heei.com.br",
           "Port": 80
-        },
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/swagger/csst/{everything}",
+      "DownstreamPathTemplate": "/swagger/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
         {
           "Host": "api1.heei.com.br",
           "Port": 80
