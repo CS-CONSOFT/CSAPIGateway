@@ -3,8 +3,8 @@
   //dsv17api.com.br/csbs101
   "Routes": [
     {
-      "UpstreamPathTemplate": "/api/{everything}",
-      "DownstreamPathTemplate": "/api/{everything}",
+      "UpstreamPathTemplate": "/csbs101/{everything}",
+      "DownstreamPathTemplate": "/csbs101/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -24,6 +24,17 @@
         }
       ]
     },
+    {
+      "UpstreamPathTemplate": "/sy103/{everything}",
+      "DownstreamPathTemplate": "/sy103/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "docker.csicorpnet.com.br",
+          "Port": 5007
+        }
+      ]
+    }
 
     //swagger
     {
