@@ -3,22 +3,22 @@
     {
       "UpstreamPathTemplate": "/api/{everything}",
       "DownstreamPathTemplate": "/api/{everything}",
-      "DownstreamScheme": "http", 
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "api3.heei.com.br",
-          "Port": 80 
+          "Port": 80 //a porta interna que ta rodando o container
         }
       ]
     },
     {
       "UpstreamPathTemplate": "/csst/{everything}",
       "DownstreamPathTemplate": "/csst/{everything}",
-      "DownstreamScheme": "http", 
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "api1.heei.com.br", 
-          "Port": 80 
+          "Host": "api1.heei.com.br",
+          "Port": 80
         }
       ]
     }

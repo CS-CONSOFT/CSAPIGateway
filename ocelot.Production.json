@@ -1,0 +1,26 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/{everything}",
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "api3.heei.com.br",
+          "Port": 443 //a porta interna que ta rodando o container
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/csst/{everything}",
+      "DownstreamPathTemplate": "/csst/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "api1.heei.com.br",
+          "Port": 443
+        }
+      ]
+    }
+  ]
+}
