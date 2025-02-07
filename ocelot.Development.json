@@ -26,7 +26,7 @@
     //swagger
     {
       "UpstreamPathTemplate": "/apiswagger",
-      "DownstreamPathTemplate": "/swagger/index.html",
+      "DownstreamPathTemplate": "/swagger",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -37,7 +37,7 @@
     },
     {
       "UpstreamPathTemplate": "/csstswagger",
-      "DownstreamPathTemplate": "/swagger/index.html",
+      "DownstreamPathTemplate": "/swagger",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
