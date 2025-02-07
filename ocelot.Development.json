@@ -3,7 +3,7 @@
     {
       "UpstreamPathTemplate": "/bs101/{everything}",
       "DownstreamPathTemplate": "/bs101/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "docker.csicorpnet.com.br",
@@ -16,7 +16,7 @@
     {
       "UpstreamPathTemplate": "/st102/{everything}",
       "DownstreamPathTemplate": "/st102/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "docker.csicorpnet.com.br",
@@ -51,22 +51,22 @@
       ]
     },
     {
-      "Key": "system",
-      "Config": [
-        {
-          "Name": "CSSY103 API",
-          "Version": "v1",
-          "Url": "https://docker.csicorpnet.com.br:5151/swagger/v1/swagger.json"
-        }
-      ]
-    },
-    {
       "Key": "estatica",
       "Config": [
         {
           "Name": "CSST102 API",
           "Version": "v1",
           "Url": "https://docker.csicorpnet.com.br:5152/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "system",
+      "Config": [
+        {
+          "Name": "CSSY103 API",
+          "Version": "v1",
+          "Url": "https://docker.csicorpnet.com.br:5151/swagger/v1/swagger.json"
         }
       ]
     }
