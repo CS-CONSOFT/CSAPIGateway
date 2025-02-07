@@ -21,6 +21,21 @@
           "Port": 80
         }
       ]
+    },
+    {
+      "UpstreamPathTemplate": "/swagger/{everything}",
+      "DownstreamPathTemplate": "/swagger/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "api3.heei.com.br",
+          "Port": 80
+        },
+        {
+          "Host": "api1.heei.com.br",
+          "Port": 80
+        }
+      ]
     }
   ]
 }
