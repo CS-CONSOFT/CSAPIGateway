@@ -25,7 +25,7 @@ builder.Services.AddHttpClient("OcelotHttpClient")
 
 builder.Services.AddOcelot();
 
-builder.WebHost.UseUrls(["http://0.0.0.0:80"]);
+//builder.WebHost.UseUrls(["http://0.0.0.0:80"]);
 
 var app = builder.Build();
 
