@@ -32,8 +32,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "api3.heei.com.br",
-          "Port": 80
+          "Host": "docker.csicorpnet.com.br",
+          "Port": 5009
         }
       ]
     },
@@ -43,8 +43,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "api1.heei.com.br",
-          "Port": 80
+          "Host": "docker.csicorpnet.com.br",
+          "Port": 5007
         }
       ]
     }
