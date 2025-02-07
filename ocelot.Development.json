@@ -1,4 +1,6 @@
 {
+
+  //dsv17api.com.br/csbs101
   "Routes": [
     {
       "UpstreamPathTemplate": "/api/{everything}",
@@ -6,8 +8,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "api3.heei.com.br",
-          "Port": 80 //a porta interna que ta rodando o container
+          "Host": "docker.csicorpnet.com.br",
+          "Port": 5009 //a porta interna que ta rodando o container
         }
       ]
     },
@@ -17,8 +19,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "api1.heei.com.br",
-          "Port": 80
+          "Host": "docker.csicorpnet.com.br",
+          "Port": 5007
         }
       ]
     },
