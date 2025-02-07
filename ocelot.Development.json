@@ -11,7 +11,7 @@
         }
       ],
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ], // Adicione os métodos HTTP que você usa
-      "SwaggerKey": "basico"
+      "SwaggerKey": "csbs01"
     },
     {
       "UpstreamPathTemplate": "/st102/{everything}",
@@ -24,7 +24,7 @@
         }
       ],
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ], // Adicione os métodos HTTP que você usa
-      "SwaggerKey": "estatica"
+      "SwaggerKey": "csst102"
     },
     {
       "UpstreamPathTemplate": "/sy103/{everything}",
@@ -36,35 +36,35 @@
           "Port": 5151
         }
       ],
-      "SwaggerKey": "system"
+      "SwaggerKey": "cssy103"
     }
   ],
   "SwaggerEndPoints": [
     {
-      "Key": "basico",
+      "Key": "csbs01",
       "Config": [
         {
-          "Name": "CSBS101 API",
+          "Name": "BS101 API",
           "Version": "v1",
           "Url": "http://docker.csicorpnet.com.br:5150/swagger/v1/swagger.json"
         }
       ]
     },
     {
-      "Key": "estatica",
+      "Key": "csst102",
       "Config": [
         {
-          "Name": "CSST102 API",
+          "Name": "ST102 API",
           "Version": "v1",
           "Url": "http://docker.csicorpnet.com.br:5152/swagger/v1/swagger.json"
         }
       ]
     },
     {
-      "Key": "system",
+      "Key": "cssy103",
       "Config": [
         {
-          "Name": "CSSY103 API",
+          "Name": "SY103 API",
           "Version": "v1",
           "Url": "http://docker.csicorpnet.com.br:5151/swagger/v1/swagger.json"
         }
