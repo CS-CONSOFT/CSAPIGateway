@@ -46,7 +46,7 @@
         {
           "Name": "CSBS101 API",
           "Version": "v1",
-          "Url": "https://docker.csicorpnet.com.br:5150/swagger/v1/swagger.json"
+          "Url": "http://docker.csicorpnet.com.br:5150/swagger/v1/swagger.json"
         }
       ]
     },
@@ -56,7 +56,7 @@
         {
           "Name": "CSST102 API",
           "Version": "v1",
-          "Url": "https://docker.csicorpnet.com.br:5152/swagger/v1/swagger.json"
+          "Url": "http://docker.csicorpnet.com.br:5152/swagger/v1/swagger.json"
         }
       ]
     },
@@ -66,7 +66,7 @@
         {
           "Name": "CSSY103 API",
           "Version": "v1",
-          "Url": "https://docker.csicorpnet.com.br:5151/swagger/v1/swagger.json"
+          "Url": "http://docker.csicorpnet.com.br:5151/swagger/v1/swagger.json"
         }
       ]
     }
