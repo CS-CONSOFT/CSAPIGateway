@@ -6,11 +6,11 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "172.30.0.57:5150",
-          "Port": 80
+          "Host": "docker.csicorpnet.com.br",
+          "Port": 5150
         }
       ],
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ], // Adicione os métodos HTTP que você usa
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ], 
       "SwaggerKey": "csbs01"
     },
     {
@@ -23,7 +23,7 @@
           "Port": 5152
         }
       ],
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ], // Adicione os métodos HTTP que você usa
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ], 
       "SwaggerKey": "csst102"
     },
     {
@@ -58,7 +58,7 @@
         {
           "Name": "BS101 API",
           "Version": "v1",
-          "Url": "http://docker.csicorpnet.com.br:5150/swagger/v1/swagger.json"
+          "Url": "http://172.30.0.57:5150/swagger/v1/swagger.json"
         }
       ]
     },
@@ -92,8 +92,5 @@
         }
       ]
     }
-  ],
-  "GlobalConfiguration": {
-    "BaseUrl": "https://dsv17bs101.heei.com.br"
-  }
+  ]
 }
