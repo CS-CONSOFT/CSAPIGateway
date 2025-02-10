@@ -1,12 +1,12 @@
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
-using Ocelot.Provider.Consul;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Configuration.AddJsonFile($"ocelot.{builder.Environment.EnvironmentName}.json", optional: false, reloadOnChange: true);
 
-builder.Services.AddOcelot().AddConsul();
+builder.Services.AddOcelot();
 builder.Services.AddSwaggerForOcelot(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(); // Isso é importante para o Swagger funcionar

@@ -6,8 +6,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "docker.csicorpnet.com.br",
-          "Port": 5150
+          "Host": "gestao_erp_dev",
+          "Port": 80
         }
       ],
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ], 
@@ -19,8 +19,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "docker.csicorpnet.com.br",
-          "Port": 5152
+          "Host": "statica_dev",
+          "Port": 80
         }
       ],
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ], 
@@ -32,8 +32,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "docker.csicorpnet.com.br",
-          "Port": 5151
+          "Host": "gestao_sys_dev",
+          "Port": 80
         }
       ],
       "SwaggerKey": "cssy103"
@@ -44,8 +44,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "docker.csicorpnet.com.br",
-          "Port": 5153
+          "Host": "cdnapi_dev",
+          "Port": 80
         }
       ],
       "SwaggerKey": "cdn901"
@@ -58,7 +58,7 @@
         {
           "Name": "BS101 API",
           "Version": "v1",
-          "Url": "http://172.30.0.57:5150/swagger/v1/swagger.json"
+          "Url": "http://gestao_erp_dev:80/swagger/v1/swagger.json"
         }
       ]
     },
