@@ -6,7 +6,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "docker.csicorpnet.com.br",
+          "Host": "172.30.0.57",
           "Port": 5150
         }
       ],
@@ -58,7 +58,7 @@
         {
           "Name": "BS101 API",
           "Version": "v1",
-          "Url": "http://docker.csicorpnet.com.br:5150/swagger/v1/swagger.json"
+          "Url": "http://172.30.0.57:5150:5150/swagger/v1/swagger.json"
         }
       ]
     },
