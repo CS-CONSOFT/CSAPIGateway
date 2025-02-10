@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Configuration.AddJsonFile($"ocelot.{builder.Environment.EnvironmentName}.json", optional: false, reloadOnChange: true);
 
-builder.Services.AddOcelot().AddConsul().AddConfigStoredInConsul();
+builder.Services.AddOcelot().AddConsul();
 builder.Services.AddSwaggerForOcelot(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(); // Isso é importante para o Swagger funcionar

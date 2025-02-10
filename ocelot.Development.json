@@ -92,5 +92,8 @@
         }
       ]
     }
-  ]
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://dsv17bs101.heei.com.br"
+  }
 }
