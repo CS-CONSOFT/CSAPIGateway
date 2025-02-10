@@ -41,7 +41,7 @@ app.UseSwagger(); // Primeiro, habilite o Swagger
 //        await x.Response.WriteAsync(json);
 //    });
 //});
-
+app.UseCors();
 app.UseSwaggerForOcelotUI(opt =>
 {
     opt.PathToSwaggerGenerator = "/swagger/docs";
