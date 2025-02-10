@@ -10,7 +10,6 @@
           "Port": 80
         }
       ],
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ], 
       "SwaggerKey": "csbs01"
     },
     {
@@ -23,7 +22,6 @@
           "Port": 80
         }
       ],
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ], 
       "SwaggerKey": "csst102"
     },
     {
