@@ -86,7 +86,7 @@
       "Key": "cdn901",
       "Config": [
         {
-          "Name": "SY103 API",
+          "Name": "CDN901 API",
           "Version": "v1",
           "Url": "http://docker.csicorpnet.com.br:5153/swagger/v1/swagger.json"
         }
