@@ -12,6 +12,20 @@ builder.Services.AddSwaggerGen(); // Isso é importante para o Swagger funcionar
 
 
 
+if (builder.Environment.IsDevelopment() || builder.Environment.IsStaging())
+{
+    builder.Services.AddCors(options =>
+    {
+        options.AddDefaultPolicy(policy =>
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+    });
+}
+
+
 builder.WebHost.UseUrls(["http://0.0.0.0:80"]);
 
 var app = builder.Build();
