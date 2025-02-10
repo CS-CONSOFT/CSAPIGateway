@@ -37,6 +37,18 @@
         }
       ],
       "SwaggerKey": "cssy103"
+    },
+    {
+      "UpstreamPathTemplate": "/cdn901/{everything}",
+      "DownstreamPathTemplate": "/cdn901/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "docker.csicorpnet.com.br",
+          "Port": 5153
+        }
+      ],
+      "SwaggerKey": "cdn901"
     }
   ],
   "SwaggerEndPoints": [
@@ -67,6 +79,16 @@
           "Name": "SY103 API",
           "Version": "v1",
           "Url": "http://docker.csicorpnet.com.br:5151/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "cdn901",
+      "Config": [
+        {
+          "Name": "SY103 API",
+          "Version": "v1",
+          "Url": "http://docker.csicorpnet.com.br:5153/swagger/v1/swagger.json"
         }
       ]
     }

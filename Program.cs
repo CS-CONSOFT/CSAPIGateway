@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen(); // Isso é importante para o Swagger funcionar
 
 
 
-if (builder.Environment.IsDevelopment() || builder.Environment.IsStaging())
+if (builder.Environment.IsDevelopment())
 {
     builder.Services.AddCors(options =>
     {
