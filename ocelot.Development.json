@@ -6,8 +6,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "172.30.0.57",
-          "Port": 5150
+          "Host": "172.30.0.57:5150",
+          "Port": 80
         }
       ],
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ], // Adicione os métodos HTTP que você usa
