@@ -68,7 +68,7 @@
         {
           "Name": "ST102 API",
           "Version": "v1",
-          "Url": "http://docker.csicorpnet.com.br:5152/swagger/v1/swagger.json"
+          "Url": "http://statica_dev:80/swagger/v1/swagger.json"
         }
       ]
     },
@@ -78,7 +78,7 @@
         {
           "Name": "SY103 API",
           "Version": "v1",
-          "Url": "http://docker.csicorpnet.com.br:5151/swagger/v1/swagger.json"
+          "Url": "http://gestao_sys_dev:80/swagger/v1/swagger.json"
         }
       ]
     },
@@ -88,7 +88,7 @@
         {
           "Name": "CDN901 API",
           "Version": "v1",
-          "Url": "http://docker.csicorpnet.com.br:5153/swagger/v1/swagger.json"
+          "Url": "http://cdnapi_dev:80/swagger/v1/swagger.json"
         }
       ]
     }
