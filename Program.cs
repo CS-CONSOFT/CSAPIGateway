@@ -33,20 +33,13 @@ var app = builder.Build();
 
 app.UseSwagger(); // Primeiro, habilite o Swagger
 
-
-//app.Map("/swagger/v1/swagger.json", b =>
-//{
-//    b.Run(async x =>
-//    {
-//        var json = File.ReadAllText("swagger.json");
-//        await x.Response.WriteAsync(json);
-//    });
-//});
 app.UseCors();
 app.UseSwaggerForOcelotUI(opt =>
 {
     opt.PathToSwaggerGenerator = "/swagger/docs";
 });
+
+
 
 
 await app.UseOcelot(); // Depois, execute o Ocelot
