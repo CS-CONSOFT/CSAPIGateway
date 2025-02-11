@@ -47,6 +47,18 @@
         }
       ],
       "SwaggerKey": "cdn901"
+    },
+    {
+      "UpstreamPathTemplate": "/os101/{everything}",
+      "DownstreamPathTemplate": "/os101/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "login_os_dev",
+          "Port": 80
+        }
+      ],
+      "SwaggerKey": "csos101"
     }
   ],
   "SwaggerEndPoints": [
@@ -87,6 +99,16 @@
           "Name": "CDN901 API",
           "Version": "v1",
           "Url": "http://cdnapi_dev:80/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "csos101",
+      "Config": [
+        {
+          "Name": "OS101 API",
+          "Version": "v1",
+          "Url": "http://login_os_dev:80/swagger/v1/swagger.json"
         }
       ]
     }
