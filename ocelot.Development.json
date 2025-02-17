@@ -37,8 +37,8 @@
       "SwaggerKey": "cssy103"
     },
     {
-      "UpstreamPathTemplate": "/cdn901/{everything}",
-      "DownstreamPathTemplate": "/cdn901/{everything}",
+      "UpstreamPathTemplate": "/ae/{everything}",
+      "DownstreamPathTemplate": "/ae/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -46,7 +46,7 @@
           "Port": 80
         }
       ],
-      "SwaggerKey": "cdn901"
+      "SwaggerKey": "apiexternas"
     },
     {
       "UpstreamPathTemplate": "/os101/{everything}",
@@ -93,10 +93,10 @@
       ]
     },
     {
-      "Key": "cdn901",
+      "Key": "apiexternas",
       "Config": [
         {
-          "Name": "CDN901 API",
+          "Name": "ApiExternas",
           "Version": "v1",
           "Url": "http://cdnapi_dev:80/swagger/v1/swagger.json"
         }

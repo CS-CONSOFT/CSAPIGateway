@@ -10,16 +10,16 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["CSGateway.csproj", "."]
-RUN dotnet restore "./CSGateway.csproj"
+COPY ["CSLB999_Gateway.csproj", "."]
+RUN dotnet restore "./CSLB999_Gateway.csproj"
 COPY . . 
 WORKDIR "/src/."
-RUN dotnet build "./CSGateway.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "./CSLB999_Gateway.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # Fase de publicação do projeto
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./CSGateway.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./CSLB999_Gateway.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # Fase final para a execução do serviço
 FROM base AS final
@@ -35,9 +35,9 @@ COPY --from=publish /app/publish .
 #
 ## Configurar variáveis de ambiente dentro do contêiner
 #ENV API_HOST_BS=${API_HOST_BS} \
-    #API_PORT_BS=${API_PORT_BS} \
-    #API_HOST_ST=${API_HOST_ST} \
-    #API_PORT_ST=${API_PORT_ST}
+#API_PORT_BS=${API_PORT_BS} \
+#API_HOST_ST=${API_HOST_ST} \
+#API_PORT_ST=${API_PORT_ST}
 
 # Configurar a entrada do serviço
-ENTRYPOINT ["dotnet", "CSGateway.dll"]
+ENTRYPOINT ["dotnet", "CSLB999_Gateway.dll"]
